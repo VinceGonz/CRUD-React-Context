@@ -1,7 +1,10 @@
 import React from "react";
+import { useContext } from "react";
+import { GlobalContext } from "../context/GlobalContext";
 
 const Dashboard = () => {
-  return <h1>Dashboard</h1>;
+  const { name } = useContext(GlobalContext);
+  return <h1>{name}</h1>;
 };
 
 export default Dashboard;
